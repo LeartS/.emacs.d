@@ -9,8 +9,9 @@
 
 (add-hook 'after-change-major-mode-hook
 		  (lambda ()
-			"Avoid fci + web mode bug https://github.com/fxbois/web-mode/issues/242"
-			(unless (equal major-mode 'web-mode)
+			"Avoid fci + web mode bug https://github.com/fxbois/web-mode/issues/242
+and don't show column ruler in modes for which it doesn't make sense"
+			(unless (member major-mode '(web-mode sql-mode sql-interactive-mode))
 			  (fci-mode t))))
 
 (provide 'hooks)

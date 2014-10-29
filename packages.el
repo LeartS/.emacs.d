@@ -20,5 +20,7 @@
 
 (load-theme 'monokai t)
 
+(require 'switch-window)
+
 (provide 'packages)
 

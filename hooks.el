@@ -7,6 +7,10 @@
 			"Hooks for Web mode."
 			(setq electric-indent-mode nil)))
 
+(add-hook 'lolcode-mode-hook
+          (lambda ()
+            (set-variable 'shift-select-mode nil)))
+
 (add-hook 'after-change-major-mode-hook
 		  (lambda ()
 			"Avoid fci + web mode bug https://github.com/fxbois/web-mode/issues/242

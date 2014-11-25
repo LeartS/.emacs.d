@@ -15,6 +15,8 @@
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 
+(require 'lolcode-mode)
+
 (require 'fill-column-indicator)
 (setq fci-rule-column 80)
 

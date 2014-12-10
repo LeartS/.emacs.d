@@ -8,8 +8,10 @@
 (smart-tabs-insinuate 'c 'c++ 'java 'javascript 'cperl 'ruby)
 
 ;; Autocomplete
-(require 'auto-complete)
-(global-auto-complete-mode t)
+;; (require 'auto-complete)
+;; (global-auto-complete-mode t)
+(require 'company)
+(add-hook 'after-init-hook 'global-company-mode)
 
 ;; Web mode customization
 (require 'web-mode)

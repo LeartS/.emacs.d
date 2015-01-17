@@ -26,5 +26,7 @@
 
 (require 'switch-window)
 
+(require 'outline-magic)
+
 (provide 'packages)
 

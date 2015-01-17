@@ -12,12 +12,11 @@
 (add-to-list 'load-path site-lisp-dir)
 
 (require 'globals)
-(require 'hooks)
 (require 'packages)
+(require 'hooks)
 (require 'mode-settings)
 (require 'functions)
 (require 'key-bindings)
-
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

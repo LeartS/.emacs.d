@@ -12,6 +12,7 @@
 ;; (global-auto-complete-mode t)
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
+(setq company-idle-delay 0.3)
 
 ;; Web mode customization
 (require 'web-mode)

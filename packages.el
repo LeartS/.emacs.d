@@ -29,5 +29,7 @@
 
 (require 'outline-magic)
 
+(require 'magit)
+
 (provide 'packages)
 

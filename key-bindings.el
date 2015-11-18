@@ -14,4 +14,7 @@
 ;; change C-x o to visual switch-window (requires switch-window package)
 (global-set-key (kbd "C-x o") (quote switch-window))
 
+;; magit magic
+(global-set-key (kbd "C-x g") 'magit-status)
+
 (provide 'key-bindings)
